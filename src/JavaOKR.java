@@ -87,77 +87,74 @@ public class JavaOKR {
 //		//lenght of array
 //		int[] scores = new int[10];
 //		Customer[] cus = {new Customer("adi"), new Customer("adiiii")};
-		
-		//loop
-		String[] names = {"adina","addy", "adi"};
-		for (String n : names) {
-			System.out.println("Name:  " + n);		
-		}	
-		
-		System.out.println();
-		
-		for (int i = 0; i< names.length; i++) {
-			System.out.println("Name2:  " + names[i]);		
-		}	
-		
-		// Array of array
-		//array of 3 array, each of which points to an array of 2 ints 
-		int[][] table = new int[3][2];
-		
-		int count = 1;
-		for(int i = 0; i < table.length; i++) { //get the length of the row (vertical)
-			for(int j = 0; j < table.length; j++) { //get the length of the columns (horizontal)
-				table [i][j] = count++; //set count value in each array slot, then increment
-			}
-		}
-		
-		int [][] table2 = {
-				{1, 2},
-				{3,4},
-				{5,6}
-		};
-		
-		table2[2] = new int[20];
-		
-		//2 nested arrays, Array.deepEquals method to do comparison 
-		System.out.println(Arrays.deepEquals(table, table2));
-		
-		
-		//access the values
-		System.out.println(table[0][0]);
-		System.out.println(table[2][2]);
-		
-		// array list can only contain Objects and you can't store diff types in a single ArrayList
-		//ArrayList<Data Type> myArrayList = new ArrayList<Data Type>();
-		
-		ArrayList<Integer> scores = new ArrayList<Integer>();
-		ArrayList<String> myArrayList1 = new ArrayList<String>();
-		ArrayList<Double> myArrayList2 = new ArrayList<Double>();
-		
-		scores.add(23);
-		scores.add(15);
-		scores.add(0);
-		
-		System.out.println(scores.size());
-		
-		//primitives
-		int a = 5;
-		System.out.println("a=" + a);
-		
-		boolean b = false;
-		System.out.println("b =" + b);
-		
-		//printing Objects
-		Customer c = new Customer("Brandon");
-		System.out.println("c = " + c);
-		
-		//u need to tell Java what to print by defining toString method
-		
-		public String toString() {
-			return "someString";
-		}
-		
-		
-		
+//		
+//		//loop
+//		String[] names = {"adina","addy", "adi"};
+//		for (String n : names) {
+//			System.out.println("Name:  " + n);		
+//		}	
+//		
+//		System.out.println();
+//		
+//		for (int i = 0; i< names.length; i++) {
+//			System.out.println("Name2:  " + names[i]);		
+//		}	
+//		
+//		// Array of array
+//		//array of 3 array, each of which points to an array of 2 ints 
+//		int[][] table = new int[3][2];
+//		
+//		int count = 1;
+//		for(int i = 0; i < table.length; i++) { //get the length of the row (vertical)
+//			for(int j = 0; j < table.length; j++) { //get the length of the columns (horizontal)
+//				table [i][j] = count++; //set count value in each array slot, then increment
+//			}
+//		}
+//		
+//		int [][] table2 = {
+//				{1, 2},
+//				{3,4},
+//				{5,6}
+//		};
+//		
+//		table2[2] = new int[20];
+//		
+//		//2 nested arrays, Array.deepEquals method to do comparison 
+//		System.out.println(Arrays.deepEquals(table, table2));
+//		
+//		
+//		//access the values
+//		System.out.println(table[0][0]);
+//		System.out.println(table[2][2]);
+//		
+//		// array list can only contain Objects and you can't store diff types in a single ArrayList
+//		//ArrayList<Data Type> myArrayList = new ArrayList<Data Type>();
+//		
+//		ArrayList<Integer> scores = new ArrayList<Integer>();
+//		ArrayList<String> myArrayList1 = new ArrayList<String>();
+//		ArrayList<Double> myArrayList2 = new ArrayList<Double>();
+//		
+//		scores.add(23);
+//		scores.add(15);
+//		scores.add(0);
+//		
+//		System.out.println(scores.size());
+//		
+//		//primitives
+//		int a = 5;
+//		System.out.println("a=" + a);
+//		
+//		boolean b = false;
+//		System.out.println("b =" + b);
+//		
+//		//printing Objects
+//		Customer c = new Customer("Brandon");
+//		System.out.println("c = " + c);
+//		
+//		//u need to tell Java what to print by defining toString method
+//		
+//		public String toString() {
+//			return "someString";
+//		}
 	}
 }
